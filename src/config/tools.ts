@@ -30,10 +30,10 @@ export interface Tool {
   status?: Status;          // omit = treated as "preview"
   popular?: boolean;
   // ── SEO fields ──────────────────────────────────────────────
-  description: string;        // meta description (150–160 chars)
-  keywords: string[];         // target search terms
-  intro: string;              // first paragraph shown on page
-  faqs: FAQ[];                // 2–3 Q&A for FAQ schema + content
+  description?: string;       // meta description (150–160 chars)
+  keywords?: string[];        // target search terms
+  intro?: string;             // first paragraph shown on page
+  faqs?: FAQ[];               // 2–3 Q&A for FAQ schema + content
 }
 
 export interface Subcategory {
